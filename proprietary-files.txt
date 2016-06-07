@@ -134,13 +134,16 @@ vendor/lib/libizat_core.so
 vendor/lib/liblbs_core.so
 
 # VOLTE
+bin/cnd
 vendor/bin/ims_rtp_daemon
 vendor/bin/imscmservice
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
-vendor/etc/permissions/ims.xml
+etc/permissions/ims.xml
 vendor/etc/permissions/imscm.xml
 vendor/etc/permissions/qti_permissions.xml
+etc/permissions/com.qti.dpmframework.xml
+etc/permissions/ConnectivityExt.xml
 etc/cne/SwimConfig.xml
 etc/cne/andsfCne.xml
 etc/dpm/dpm.conf
@@ -153,8 +156,11 @@ etc/permissions/dpmapi.xml
 -app/imssettings/imssettings.apk
 -app/uceShimService/uceShimService.apk
 -priv-app/CNEService/CNEService.apk
--framework/com.qti.dpmframework.jar
--framework/dpmapi.jar
+-priv-app/dpmserviceapp/dpmserviceapp.apk
+framework/cneapiclient.jar
+framework/com.qti.dpmframework.jar
+framework/com.quicinc.cne.jar
+framework/dpmapi.jar
 vendor/bin/dpmd
 vendor/bin/ipacm-diag
 vendor/bin/ATFWD-daemon

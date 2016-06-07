@@ -91,6 +91,10 @@ DEVICE_SPECIFIC_CAMERA_PATH	:= $(DEVICE_PATH)/camera
 BOARD_CHARGER_DISABLE_INIT_BLANK 	:= true
 BOARD_GLOBAL_CFLAGS 			+= -DBATTERY_REAL_INFO
 
+# CNE
+BOARD_USES_QCNE := true
+TARGET_LDPRELOAD := libNimsWrap.so
+
 # Tap to wake
 TARGET_TAP_TO_WAKE_NODE :="/sys/devices/virtual/touch/tp_dev/gesture_on"
 
