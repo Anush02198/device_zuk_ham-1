@@ -439,6 +439,20 @@ on property:bluetooth.hciattach=true
 on property:bluetooth.hciattach=false
     setprop bluetooth.status off
 
+service cnd /vendor/bin/cnd
+     class main
+     user system
+     group system wifi inet radio wakelock net_admin
+     writepid /dev/cpuset/system-background/tasks
+
+service dpmd /system/bin/dpmd
+    class late_start
+    socket dpmd stream 660 root system
+    socket tcm stream 660 root inet
+    socket dpmwrapper stream 660 root inet
+    group system readproc inet
+    writepid /dev/cpuset/system-background/tasks
+
 service atfwd /vendor/bin/ATFWD-daemon
     class late_start
     user system
