@@ -264,6 +264,9 @@ on post-fs-data
     mkdir /data/system/perfd 0770 root system
     chmod 2770 /data/system/perfd
 
+    # Create IOP  deamon related dirs
+    mkdir /data/vendor/iop 0770 root system
+
     # Camera sockets
     mkdir /data/misc/camera 0770 camera camera
 
