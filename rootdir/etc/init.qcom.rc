@@ -588,3 +588,8 @@ service qti_ims /system/bin/sh /init.qti.ims.sh
     user radio
     group radio
     oneshot
+
+on property:sys.boot_completed=1
+    restart ril-daemon
+    restart netmgrd
+    setprop persist.data.netmgrd.qos.enable false
