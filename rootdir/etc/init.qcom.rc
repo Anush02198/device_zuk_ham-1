@@ -483,6 +483,15 @@ on property:init.svc.surfaceflinger=stopped
 on property:init.svc.surfaceflinger=running
     start ppd
 
+service cnss-daemon /system/bin/cnss-daemon -n -l
+    class late_start
+    user system
+    group system inet net_admin wifi
+    capabilities NET_ADMIN
+ 
+on property:sys.shutdown.requested=*
+    stop cnss-daemon
+
 # diag logging
 service diag_mdlog_start /system/vendor/bin/diag_mdlog
     class late_start
