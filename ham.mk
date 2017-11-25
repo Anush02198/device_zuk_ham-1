@@ -167,8 +167,12 @@ PRODUCT_PACKAGES += \
     ims-ext-common
 
 # IRQ
-+PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf
+
+# QTI
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
 
 # Lights
 PRODUCT_PACKAGES += \
