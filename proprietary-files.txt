@@ -239,7 +239,9 @@ framework/qcnvitems.jar|2bf9f56844bf7548cc7aa85a8115e5d6644e81f3
 framework/qcrilhook.jar|9ea6c63ea7dc0b52c5d81d6dc62b0b0deeb4168c
 framework/ConnectivityExt.jar|99fc5c3f2077578086ad5b4e6338a822949ec753
 vendor/lib/libmdmdetect.so|3656cdf75f1ad9df3de34dc24ba8713ad29adafc
-vendor/lib/libcneapiclient.so|b01a71ce28e9e33a7d6d88a90d37a1aa977abce9
+vendor/lib/com.quicinc.cne.api@1.0.so|60dd6f1fa0c70523f91342b07be6c82e733cdb90
+vendor/lib/com.quicinc.cne.constants@1.0.so|0d3b2fd95e8ea3525467d8ca38865ac2a9d3f4c7
+vendor/lib/libcneapiclient.so|f97d23653b7ed72694800eb45cd5a78663e17c45
 vendor/lib/libconfigdb.so|7116f6a9872991ea934bb3618fbb9b29787f3a74
 vendor/lib/liblqe.so|15ea3455c156395a77f48573c587f1b31f0cb180
 vendor/lib/libnetmgr.so|77ca2c0d161421f7509d67c0f95701c00a53fd06
@@ -270,6 +272,15 @@ vendor/lib/libtfa98xx.so
 # STLport
 vendor/lib/libstlport.so
 
+# Signed Venus (media) firmware
+etc/firmware/venus.b00
+etc/firmware/venus.b01
+etc/firmware/venus.b02
+etc/firmware/venus.b03
+etc/firmware/venus.b04
+etc/firmware/venus.mbn
+etc/firmware/venus.mdt
+
 # Thermal
 vendor/bin/thermal-engine
 vendor/lib/libthermalclient.so
@@ -280,15 +291,6 @@ vendor/bin/time_daemon
 vendor/lib/libtime_genoff.so
 vendor/lib/libTimeService.so
 -app/TimeService/TimeService.apk
-
-# Venus (media) firmware
-vendor/firmware/venus.b00
-vendor/firmware/venus.b01
-vendor/firmware/venus.b02
-vendor/firmware/venus.b03
-vendor/firmware/venus.b04
-vendor/firmware/venus.mbn
-vendor/firmware/venus.mdt
 
 # Widevine - kanged from Angler OPM3.171019.019
 vendor/lib/mediadrm/libwvdrmengine.so|fb276a490ee3d630f9ba5ba751b00397a2f6dca0
