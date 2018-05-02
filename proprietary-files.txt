@@ -154,6 +154,7 @@ etc/permissions/dpmapi.xml
 -framework/dpmapi.jar
 vendor/bin/dpmd
 vendor/bin/ipacm-diag
+vendor/bin/ATFWD-daemon
 vendor/lib/libdpmctmgr.so
 vendor/lib/libdpmfdmgr.so
 vendor/lib/libdpmframework.so
