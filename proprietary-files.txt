@@ -138,8 +138,9 @@ vendor/bin/ims_rtp_daemon
 vendor/bin/imscmservice
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
-etc/permissions/imscm.xml
-etc/permissions/qti_permissions.xml
+vendor/etc/permissions/ims.xml
+vendor/etc/permissions/imscm.xml
+vendor/etc/permissions/qti_permissions.xml
 etc/cne/SwimConfig.xml
 etc/cne/andsfCne.xml
 etc/dpm/dpm.conf
@@ -147,7 +148,7 @@ etc/dpm/nsrm/NsrmConfiguration.xml
 etc/permissions/cneapiclient.xml
 etc/permissions/com.quicinc.cne.xml
 etc/permissions/dpmapi.xml
--framework/imscmlibrary.jar
+-vendor/framework/imscmlibrary.jar
 -app/ims/ims.apk
 -app/imssettings/imssettings.apk
 -app/uceShimService/uceShimService.apk
