@@ -111,7 +111,9 @@ BOARD_OEMIMAGE_PARTITION_SIZE      := 133169152
 TARGET_USES_MKE2FS := true
 
 #config
-TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
+TARGET_FS_CONFIG_GEN := \
+      $(DEVICE_PATH)/configs/config.fs \
+      $(DEVICE_PATH)/configs/file_caps.fs
 
 # Graphics
 USE_OPENGL_RENDERER := true
