@@ -155,6 +155,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/izat.conf:system/etc/izat.conf \
     $(LOCAL_PATH)/gps/etc/sap.conf:system/etc/sap.conf
 
+# IMS
+PRODUCT_PACKAGES += \
+    ims-ext-common
+
 # Lights
 PRODUCT_PACKAGES += \
     lights.msm8974
@@ -211,6 +215,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_treble=true \
     persist.camera.4k2k.enable=1
 
+# RCS
+PRODUCT_PACKAGES += \
+    rcs_service_aidl \
+    rcs_service_aidl.xml \
+    rcs_service_api \
+    rcs_service_api.xml
+
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp_policy/mediacodec.policy:system/vendor/etc/seccomp_policy/mediacodec.policy \
@@ -244,6 +255,14 @@ PRODUCT_PACKAGES += \
 # Data
 PRODUCT_PACKAGES += \
     librmnetctl
+
+# Telephony
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # Thermal config
 PRODUCT_COPY_FILES += \
