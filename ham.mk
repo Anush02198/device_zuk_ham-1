@@ -108,6 +108,12 @@ PRODUCT_PACKAGES += \
     Snap \
     ParanoidCamera
 
+# Connectivity Engine support (CNE)
+PRODUCT_PACKAGES += \
+    cneapiclient \
+    com.quicinc.cne \
+    services-ext
+
 # Boot animation
 TARGET_BOOTANIMATION_HALF_RES := true
 
