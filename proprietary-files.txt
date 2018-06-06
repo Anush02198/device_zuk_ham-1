@@ -100,6 +100,12 @@ vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 
 # Camera firmware
+vendor/firmware/mbn_ota/mcfg_sw_ATT-VoLTE.mbn
+vendor/firmware/mbn_ota/mcfg_sw_CMCC_CSFB_DSDS_Commercial_Volte.mbn
+vendor/firmware/mbn_ota/mcfg_sw_CU_OpenMkt-Commercial.mbn
+vendor/firmware/mbn_ota/mcfg_sw_OEM_Overseas-Commercial.mbn
+vendor/firmware/mbn_ota/mcfg_sw_Reliance-Commercial.mbn
+vendor/firmware/mbn_ota/mcfg_sw_TMO-Commercial.mbn
 vendor/firmware/cpp_firmware_v1_1_1.fw
 vendor/firmware/cpp_firmware_v1_1_6.fw
 vendor/firmware/cpp_firmware_v1_2_0.fw
