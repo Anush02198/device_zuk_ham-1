@@ -79,6 +79,10 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
     android.hardware.keymaster@3.0-service
 
+# Libshim
+PRODUCT_PACKAGES += \
+    libshim_atomic
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.1-service-impl \
