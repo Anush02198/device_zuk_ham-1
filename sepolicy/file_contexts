@@ -35,3 +35,6 @@
 
 # hidraw dynamic sensor
 /dev/hidraw[0-9]+ u:object_r:sensors_device:s0
+
+# Volte
+/system/vendor/bin/init\.qti\.ims\.sh               u:object_r:qti_init_shell_exec:s0
