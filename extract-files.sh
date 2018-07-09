@@ -52,6 +52,9 @@ else
   fi
 fi
 
+IMSCMLIBRARY="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary/vendor/etc/permissions/imscm.xml
+sed -i 's|/system/framework|/vendor/framework|g' "$IMSCMLIBRARY"
+
 # Initialize the helper
 setup_vendor "$DEVICE" "$VENDOR" "$CM_ROOT"
 
