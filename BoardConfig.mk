@@ -218,14 +218,6 @@ PROTOBUF_SUPPORTED := true
 # ANT+ - TODO: Confirm this - TODO: Confirm this - TODO: Confirm this - TODO: Confirm this
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
-# Shims
-TARGET_LD_SHIM_LIBS := \
-    /system/bin/mm-qcamera-daemon|libshim_camera.so \
-    /system/vendor/lib/libmmcamera2_imglib_modules.so|libshim_camera.so \
-    /system/vendor/lib/libmmcamera2_stats_modules.so|libshim_camera.so \
-    /system/vendor/lib/libmmqjpeg_codec.so|libboringssl-compat.so \
-    /system/vendor/lib64/lib-imsdpl.so|libshim_boringssl.so
-
 #Enable dexpreopt to speed boot time
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
