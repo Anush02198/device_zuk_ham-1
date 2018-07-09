@@ -147,8 +147,9 @@ etc/permissions/cneapiclient.xml
 etc/permissions/com.quicinc.cne.xml
 etc/permissions/dpmapi.xml
 -framework/imscmlibrary.jar
--vendor/app/ims/ims.apk
--vendor/app/imssettings/imssettings.apk
+-app/ims/ims.apk
+-app/imssettings/imssettings.apk
+-app/uceShimService/uceShimService.apk
 -priv-app/CNEService/CNEService.apk
 -framework/com.qti.dpmframework.jar
 -framework/dpmapi.jar
@@ -281,6 +282,7 @@ vendor/lib/libperipheral_client.so|aae1a211854c6327b226f9018192c57571e31c5f
 vendor/lib/libril-qc-qmi-1.so|f6ac6babaf75a7f1072f0217a69e148bee95c634
 vendor/lib/libril-qcril-hook-oem.so|cfdd208a21588c45fb47bae07236ac1efb5e2e53
 vendor/lib/libxml.so|2be093edb84b0d158cd1963d762930cf2572e8e2
+vendor/radio/qcril_database/qcril.db
 
 # Sensors - old blobs
 vendor/bin/sensors.qcom|cb99b6a2b6442ce0d86a8d427891623d172365ce
