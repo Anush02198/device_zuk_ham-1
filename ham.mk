@@ -113,7 +113,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     cneapiclient \
     com.quicinc.cne \
-    services-ext
+    services-ext \
+    libcnefeatureconfig
 
 # Boot animation
 TARGET_BOOTANIMATION_HALF_RES := true
