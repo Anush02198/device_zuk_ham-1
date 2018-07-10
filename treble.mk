@@ -85,7 +85,10 @@ PRODUCT_PACKAGES += \
 
 # Libshim
 PRODUCT_PACKAGES += \
-    libshim_atomic
+   libshim_parcel \
+   libshim_boringssl \
+   libshims_camera \
+   libshims_ims
 
 # Power
 PRODUCT_PACKAGES += \
