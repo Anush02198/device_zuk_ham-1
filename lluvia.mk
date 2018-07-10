@@ -26,6 +26,8 @@ $(call inherit-product, device/zuk/ham/ham.mk)
 $(call inherit-product, vendor/lluvia/config/common_full_phone.mk)
 $(call inherit-product, vendor/lluvia/config/caf_fw.mk)
 
+PRODUCT_PACKAGE_OVERLAYS += vendor/lluvia/overlay/CarrierConfig
+
 PRODUCT_NAME := lluvia_ham
 PRODUCT_DEVICE := ham
 PRODUCT_MANUFACTURER := ZUK
