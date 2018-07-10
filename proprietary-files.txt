@@ -139,6 +139,7 @@ vendor/bin/imscmservice
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
 etc/permissions/imscm.xml
+etc/permissions/qti_permissions.xml
 etc/cne/SwimConfig.xml
 etc/cne/andsfCne.xml
 etc/dpm/dpm.conf
@@ -156,6 +157,7 @@ etc/permissions/dpmapi.xml
 vendor/bin/dpmd
 vendor/bin/ipacm-diag
 vendor/bin/ATFWD-daemon
+vendor/lib/lib-dplmedia.so
 vendor/lib/libdpmctmgr.so
 vendor/lib/libdpmfdmgr.so
 vendor/lib/libdpmframework.so
@@ -177,6 +179,7 @@ vendor/lib/lib-imsrcscm.so
 vendor/lib/lib-imsrcscmclient.so
 vendor/lib/lib-imsrcscmservice.so
 vendor/lib/lib-imss.so
+vendor/lib/lib-imsSDP.so
 vendor/lib/lib-imsvt.so
 vendor/lib/lib-imsxml.so
 vendor/lib/lib-rcsimssjni.so
@@ -188,6 +191,7 @@ vendor/lib/lib-rtpsl.so
 vendor/lib/libimscamera_jni.so
 vendor/lib/libimsmedia_jni.so
 vendor/lib/librcc.so
+vendor/lib/libvcel.so
 vendor/lib/libvoice-svc.so
 
 # Graphics
